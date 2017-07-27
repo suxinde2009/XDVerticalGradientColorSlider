@@ -3,11 +3,6 @@ Pod::Spec.new do |s|
   s.version      = "0.1.0"
   s.summary      = "一个竖直方向渐变色的颜色滑竿选择器. A vertical gradient color picker."
 
-
-  s.description  = <<-DESC
-                   一个竖直方向渐变色的颜色滑竿选择器
-                   A vertical gradient color picker.
-
   s.homepage     = "https://github.com/suxinde2009/XDVerticalGradientColorSlider"
   s.license      = "MIT"
   s.author             = { "suxinde2009" => "suxinde2009@126.com" }
