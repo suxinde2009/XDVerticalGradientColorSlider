@@ -1,12 +1,20 @@
 PODS:
   - Masonry (1.0.2)
+  - XDVerticalGradientColorSlider (0.1.0):
+    - Masonry (~> 1.0.2)
 
 DEPENDENCIES:
   - Masonry (~> 1.0.2)
+  - XDVerticalGradientColorSlider (from `.././`)
+
+EXTERNAL SOURCES:
+  XDVerticalGradientColorSlider:
+    :path: ".././"
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  XDVerticalGradientColorSlider: d9e78fd8198962688665649dfa9164ba006beed8
 
-PODFILE CHECKSUM: 9b6946aa53d5e6b24cbeff22071d9e96ce0f19ad
+PODFILE CHECKSUM: 4098e6cbf6b76cc7d611492d54b474f29c2d5cc0
 
 COCOAPODS: 1.2.1

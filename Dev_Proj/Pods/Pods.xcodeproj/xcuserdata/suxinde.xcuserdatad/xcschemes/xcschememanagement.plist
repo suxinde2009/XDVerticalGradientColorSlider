@@ -14,10 +14,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XDVerticalGradientColorSlider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>286AB27F6740F7E8BD85ADE05AB57453</key>
+		<key>3E73CEF9AE4CB08CF1796ACEEEB9DA08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>576574E3E5F1812E72686839DC920DC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

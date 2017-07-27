@@ -14,8 +14,6 @@
 		1F4E398A1F2A400D00CDAD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E39881F2A400D00CDAD80 /* Main.storyboard */; };
 		1F4E398C1F2A400D00CDAD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E398B1F2A400D00CDAD80 /* Assets.xcassets */; };
 		1F4E398F1F2A400D00CDAD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E398D1F2A400D00CDAD80 /* LaunchScreen.storyboard */; };
-		1F4E399A1F2A40E000CDAD80 /* XDVerticalGradientColorSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E39971F2A40E000CDAD80 /* XDVerticalGradientColorSlider.bundle */; };
-		1F4E399B1F2A40E000CDAD80 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E39991F2A40E000CDAD80 /* XDVerticalGradientColorSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +28,6 @@
 		1F4E398B1F2A400D00CDAD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4E398E1F2A400D00CDAD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4E39901F2A400D00CDAD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F4E39971F2A40E000CDAD80 /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
-		1F4E39981F2A40E000CDAD80 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
-		1F4E39991F2A40E000CDAD80 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
 		2544E1E4EC56249B97060A9A /* libPods-XDVerticalGradientColorSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XDVerticalGradientColorSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD5681273D2E807B1911640 /* Pods-XDVerticalGradientColorSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDVerticalGradientColorSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDVerticalGradientColorSlider/Pods-XDVerticalGradientColorSlider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +73,6 @@
 		1F4E397E1F2A400D00CDAD80 /* XDVerticalGradientColorSlider */ = {
 			isa = PBXGroup;
 			children = (
-				1F4E39961F2A40E000CDAD80 /* Src */,
 				1F4E39821F2A400D00CDAD80 /* AppDelegate.h */,
 				1F4E39831F2A400D00CDAD80 /* AppDelegate.m */,
 				1F4E39851F2A400D00CDAD80 /* ViewController.h */,
@@ -98,16 +92,6 @@
 				1F4E39801F2A400D00CDAD80 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1F4E39961F2A40E000CDAD80 /* Src */ = {
-			isa = PBXGroup;
-			children = (
-				1F4E39971F2A40E000CDAD80 /* XDVerticalGradientColorSlider.bundle */,
-				1F4E39981F2A40E000CDAD80 /* XDVerticalGradientColorSlider.h */,
-				1F4E39991F2A40E000CDAD80 /* XDVerticalGradientColorSlider.m */,
-			);
-			path = Src;
 			sourceTree = "<group>";
 		};
 		9CC4FA3B543B91AB8AEE0D3A /* Pods */ = {
@@ -182,7 +166,6 @@
 			files = (
 				1F4E398F1F2A400D00CDAD80 /* LaunchScreen.storyboard in Resources */,
 				1F4E398C1F2A400D00CDAD80 /* Assets.xcassets in Resources */,
-				1F4E399A1F2A40E000CDAD80 /* XDVerticalGradientColorSlider.bundle in Resources */,
 				1F4E398A1F2A400D00CDAD80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +225,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F4E399B1F2A40E000CDAD80 /* XDVerticalGradientColorSlider.m in Sources */,
 				1F4E39871F2A400D00CDAD80 /* ViewController.m in Sources */,
 				1F4E39841F2A400D00CDAD80 /* AppDelegate.m in Sources */,
 				1F4E39811F2A400D00CDAD80 /* main.m in Sources */,

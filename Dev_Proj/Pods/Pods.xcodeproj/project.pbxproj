@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		01E09711F001C49F92A97060414E262B /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1161BAF7B8133D89AB37C712464706C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */; };
 		1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */; };
-		356DF7A37BC32401FF428AB662644C9C /* Pods-XDVerticalGradientColorSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68F41C44BFBF61ADEDD701D6C418DB /* Pods-XDVerticalGradientColorSlider-dummy.m */; };
 		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		490CA524521F7D444EA58FA915D7E99C /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49B903D576E09560C52AA92FDCC31A68 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CBE1B46550A3FB90FDD1CB9CBA7B7FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E6F3DCF4FA875DBBDC27AE81E0EEA4B /* Pods-XDVerticalGradientColorSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68F41C44BFBF61ADEDD701D6C418DB /* Pods-XDVerticalGradientColorSlider-dummy.m */; };
 		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */; };
 		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		6249770A7D163B0F3001D5A76C5FA01C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A231E76AF7DC6CB887B5B2C522A7A /* Masonry-dummy.m */; };
+		73AC3281237C0BDA4E74B460079CFBDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8229525E7067F22D3977D2628DF5F2C3 /* NSArray+MASAdditions.m */; };
 		86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */; };
@@ -27,36 +29,56 @@
 		983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */; };
+		A266D3B8D3F28061D18BF1DE5181FC86 /* XDVerticalGradientColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD7115B163C9C26842133AEEF3DA802 /* XDVerticalGradientColorSlider.m */; };
 		A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1CD5351FAF52A757EEF6E5EF2084D6E /* XDVerticalGradientColorSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA46E1FAA80FFD4FFCB8E0384D78D27 /* XDVerticalGradientColorSlider-dummy.m */; };
+		C455C918721BBE6D573E97659FB32A35 /* XDVerticalGradientColorSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C884C79C2C625D23F54BBBA0DF98F78 /* XDVerticalGradientColorSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */; };
 		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */; };
 		E072DA57403C4BFF9B10467BE05604C5 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1E771349813022263F549BDF33CB4BB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B25C340FD37A7A8A13960E53F1F550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		EC48DE078CA5E55922CCE02354D475CD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76BC103211D18A7A283AA2FABAFF3CAD /* PBXContainerItemProxy */ = {
+		555A8E36B4961876041A159874771B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
 			remoteInfo = Masonry;
 		};
+		6A235F39B73E0B610773F425E43D6A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		E18A4C906E57117845280A5516F81570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E73CEF9AE4CB08CF1796ACEEEB9DA08;
+			remoteInfo = XDVerticalGradientColorSlider;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		0B32A58264973E4C52CDE038734C4325 /* XDVerticalGradientColorSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XDVerticalGradientColorSlider.xcconfig; sourceTree = "<group>"; };
+		0C884C79C2C625D23F54BBBA0DF98F78 /* XDVerticalGradientColorSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XDVerticalGradientColorSlider.h; sourceTree = "<group>"; };
 		1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		1784A8101F0411E421264700BF522FC2 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C43CAFE87D067B1CB02874B06EFB27C /* libPods-XDVerticalGradientColorSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-XDVerticalGradientColorSlider.a"; path = "libPods-XDVerticalGradientColorSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		3D889CDAD35AB476FF46E94FF48CA040 /* libXDVerticalGradientColorSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libXDVerticalGradientColorSlider.a; path = libXDVerticalGradientColorSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4036C659A78186DBF90A8E833AB4B8EB /* XDVerticalGradientColorSlider.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = XDVerticalGradientColorSlider.bundle; sourceTree = "<group>"; };
 		40819E4101A8BD619418077EC541C09B /* Pods-XDVerticalGradientColorSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDVerticalGradientColorSlider.release.xcconfig"; sourceTree = "<group>"; };
 		475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		698801959D856C97AF237342EDD4F57E /* Pods-XDVerticalGradientColorSlider-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDVerticalGradientColorSlider-frameworks.sh"; sourceTree = "<group>"; };
@@ -75,29 +97,32 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A2F75C96947B2651F82FC18F66C43B49 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		A811ED70EAF1C7D105C75B295A7DE0A1 /* libPods-XDVerticalGradientColorSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-XDVerticalGradientColorSlider.a"; path = "libPods-XDVerticalGradientColorSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCD7115B163C9C26842133AEEF3DA802 /* XDVerticalGradientColorSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XDVerticalGradientColorSlider.m; sourceTree = "<group>"; };
 		BF1BEC3D169A6EB504EE080DB2C9E76B /* Pods-XDVerticalGradientColorSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XDVerticalGradientColorSlider.debug.xcconfig"; sourceTree = "<group>"; };
 		C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		CD3C8B9D639A6761C6E53A84F39CF1DA /* Pods-XDVerticalGradientColorSlider-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XDVerticalGradientColorSlider-resources.sh"; sourceTree = "<group>"; };
 		D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E03645E981FB63AD17ABEC2939EDE646 /* XDVerticalGradientColorSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XDVerticalGradientColorSlider-prefix.pch"; sourceTree = "<group>"; };
 		E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		EAA46E1FAA80FFD4FFCB8E0384D78D27 /* XDVerticalGradientColorSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XDVerticalGradientColorSlider-dummy.m"; sourceTree = "<group>"; };
 		EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		FB74242991B9BB5C1A6C798D88B95517 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C88A92D4E36A4133A84B611DBD0D0E2 /* Frameworks */ = {
+		176C475CE41B6CABA31635F5B378D5C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B25C340FD37A7A8A13960E53F1F550 /* Foundation.framework in Frameworks */,
+				73AC3281237C0BDA4E74B460079CFBDF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,16 +135,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA26B804575641D64838CB1F9729A452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1161BAF7B8133D89AB37C712464706C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		317702FEE9704213C3FD632EC4A6778B /* Products */ = {
+		2A0745656A4C1EB5DB1BA1DD21212E4E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1784A8101F0411E421264700BF522FC2 /* libMasonry.a */,
-				A811ED70EAF1C7D105C75B295A7DE0A1 /* libPods-XDVerticalGradientColorSlider.a */,
+				C440D59F2B22A7B2CC4AAC0F074B3963 /* XDVerticalGradientColorSlider */,
 			);
-			name = Products;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		3B9FAC5BAEA75CAB3E20372C4D27D7EE /* Masonry */ = {
@@ -184,6 +216,16 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
+		505B88F4EF69437EBC047BA4EB504404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB74242991B9BB5C1A6C798D88B95517 /* libMasonry.a */,
+				1C43CAFE87D067B1CB02874B06EFB27C /* libPods-XDVerticalGradientColorSlider.a */,
+				3D889CDAD35AB476FF46E94FF48CA040 /* libXDVerticalGradientColorSlider.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		57C98118C029A12273D6519A266652A8 /* Pods-XDVerticalGradientColorSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,15 +249,74 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		5B554F14C7A13AE91448C2933EE114BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B32A58264973E4C52CDE038734C4325 /* XDVerticalGradientColorSlider.xcconfig */,
+				EAA46E1FAA80FFD4FFCB8E0384D78D27 /* XDVerticalGradientColorSlider-dummy.m */,
+				E03645E981FB63AD17ABEC2939EDE646 /* XDVerticalGradientColorSlider-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Dev_Proj/Pods/Target Support Files/XDVerticalGradientColorSlider";
+			sourceTree = "<group>";
+		};
+		76D5632D8306A5A6C1B372F7F68548A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4036C659A78186DBF90A8E833AB4B8EB /* XDVerticalGradientColorSlider.bundle */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2A0745656A4C1EB5DB1BA1DD21212E4E /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
-				317702FEE9704213C3FD632EC4A6778B /* Products */,
+				505B88F4EF69437EBC047BA4EB504404 /* Products */,
 				5A5B041552D8194AF47DC0C040705B31 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		944A8E63BD32BBCBA85EC61C9340C6E6 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				76D5632D8306A5A6C1B372F7F68548A6 /* Resources */,
+			);
+			name = Src;
+			path = Src;
+			sourceTree = "<group>";
+		};
+		A526639FF3D184D7245747189F5B3F9C /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				0C884C79C2C625D23F54BBBA0DF98F78 /* XDVerticalGradientColorSlider.h */,
+				BCD7115B163C9C26842133AEEF3DA802 /* XDVerticalGradientColorSlider.m */,
+			);
+			name = Src;
+			path = Src;
+			sourceTree = "<group>";
+		};
+		C440D59F2B22A7B2CC4AAC0F074B3963 /* XDVerticalGradientColorSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CFB839F47C2C167383216EF9E12DD31E /* Resources */,
+				A526639FF3D184D7245747189F5B3F9C /* Src */,
+				5B554F14C7A13AE91448C2933EE114BF /* Support Files */,
+			);
+			name = XDVerticalGradientColorSlider;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CFB839F47C2C167383216EF9E12DD31E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				944A8E63BD32BBCBA85EC61C9340C6E6 /* Src */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
@@ -251,24 +352,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DED8DDCDFA5200D0AA7A0EF108E315A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455C918721BBE6D573E97659FB32A35 /* XDVerticalGradientColorSlider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		286AB27F6740F7E8BD85ADE05AB57453 /* Pods-XDVerticalGradientColorSlider */ = {
+		3E73CEF9AE4CB08CF1796ACEEEB9DA08 /* XDVerticalGradientColorSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09ED6BC05B0ECA93BE992D25A5FB0C1A /* Build configuration list for PBXNativeTarget "Pods-XDVerticalGradientColorSlider" */;
+			buildConfigurationList = 83A3CE1BFF94696DEAE7C8411B31DDF8 /* Build configuration list for PBXNativeTarget "XDVerticalGradientColorSlider" */;
 			buildPhases = (
-				1FDCC3DC162ED0C8FC4AAD3181763F8A /* Sources */,
-				2C88A92D4E36A4133A84B611DBD0D0E2 /* Frameworks */,
+				ED168359FC6FB94D31C96D7E4AE8045D /* Sources */,
+				176C475CE41B6CABA31635F5B378D5C1 /* Frameworks */,
+				DED8DDCDFA5200D0AA7A0EF108E315A9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				71C8889A109424DE129880B8C7F7781C /* PBXTargetDependency */,
+				B6ECF1F16EE7F72ADA3572C78E84E947 /* PBXTargetDependency */,
+			);
+			name = XDVerticalGradientColorSlider;
+			productName = XDVerticalGradientColorSlider;
+			productReference = 3D889CDAD35AB476FF46E94FF48CA040 /* libXDVerticalGradientColorSlider.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		576574E3E5F1812E72686839DC920DC8 /* Pods-XDVerticalGradientColorSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9996633DF93F91555BEA91633E271913 /* Build configuration list for PBXNativeTarget "Pods-XDVerticalGradientColorSlider" */;
+			buildPhases = (
+				5358C1172015915839CF721F858D5666 /* Sources */,
+				CA26B804575641D64838CB1F9729A452 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4E323608FEDD2BD01816432FE04B6E7 /* PBXTargetDependency */,
+				2EDA634C60FD56397E59C57DEAFFD355 /* PBXTargetDependency */,
 			);
 			name = "Pods-XDVerticalGradientColorSlider";
 			productName = "Pods-XDVerticalGradientColorSlider";
-			productReference = A811ED70EAF1C7D105C75B295A7DE0A1 /* libPods-XDVerticalGradientColorSlider.a */;
+			productReference = 1C43CAFE87D067B1CB02874B06EFB27C /* libPods-XDVerticalGradientColorSlider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
@@ -285,7 +413,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 1784A8101F0411E421264700BF522FC2 /* libMasonry.a */;
+			productReference = FB74242991B9BB5C1A6C798D88B95517 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -305,22 +433,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 317702FEE9704213C3FD632EC4A6778B /* Products */;
+			productRefGroup = 505B88F4EF69437EBC047BA4EB504404 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
-				286AB27F6740F7E8BD85ADE05AB57453 /* Pods-XDVerticalGradientColorSlider */,
+				576574E3E5F1812E72686839DC920DC8 /* Pods-XDVerticalGradientColorSlider */,
+				3E73CEF9AE4CB08CF1796ACEEEB9DA08 /* XDVerticalGradientColorSlider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FDCC3DC162ED0C8FC4AAD3181763F8A /* Sources */ = {
+		5358C1172015915839CF721F858D5666 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356DF7A37BC32401FF428AB662644C9C /* Pods-XDVerticalGradientColorSlider-dummy.m in Sources */,
+				5E6F3DCF4FA875DBBDC27AE81E0EEA4B /* Pods-XDVerticalGradientColorSlider-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +471,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED168359FC6FB94D31C96D7E4AE8045D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CD5351FAF52A757EEF6E5EF2084D6E /* XDVerticalGradientColorSlider-dummy.m in Sources */,
+				A266D3B8D3F28061D18BF1DE5181FC86 /* XDVerticalGradientColorSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		71C8889A109424DE129880B8C7F7781C /* PBXTargetDependency */ = {
+		2EDA634C60FD56397E59C57DEAFFD355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XDVerticalGradientColorSlider;
+			target = 3E73CEF9AE4CB08CF1796ACEEEB9DA08 /* XDVerticalGradientColorSlider */;
+			targetProxy = E18A4C906E57117845280A5516F81570 /* PBXContainerItemProxy */;
+		};
+		B4E323608FEDD2BD01816432FE04B6E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
-			targetProxy = 76BC103211D18A7A283AA2FABAFF3CAD /* PBXContainerItemProxy */;
+			targetProxy = 6A235F39B73E0B610773F425E43D6A59 /* PBXContainerItemProxy */;
+		};
+		B6ECF1F16EE7F72ADA3572C78E84E947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 555A8E36B4961876041A159874771B4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,29 +549,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		31C0C7018B759982E34B6D9D7BD10446 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF1BEC3D169A6EB504EE080DB2C9E76B /* Pods-XDVerticalGradientColorSlider.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -515,7 +642,7 @@
 			};
 			name = Release;
 		};
-		EAB4D7BBFACAD6B64186AF01F3987D4F /* Release */ = {
+		8BFF154B03318A6672BF2B5994F8A0BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40819E4101A8BD619418077EC541C09B /* Pods-XDVerticalGradientColorSlider.release.xcconfig */;
 			buildSettings = {
@@ -538,18 +665,78 @@
 			};
 			name = Release;
 		};
+		9D099F6CA12E0F04C9CCE4D89EA7A489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B32A58264973E4C52CDE038734C4325 /* XDVerticalGradientColorSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XDVerticalGradientColorSlider/XDVerticalGradientColorSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BF7631F71963BF1559F3F582F47C6C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B32A58264973E4C52CDE038734C4325 /* XDVerticalGradientColorSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XDVerticalGradientColorSlider/XDVerticalGradientColorSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E220E81D55608C31F446582ABBE9A0BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1BEC3D169A6EB504EE080DB2C9E76B /* Pods-XDVerticalGradientColorSlider.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09ED6BC05B0ECA93BE992D25A5FB0C1A /* Build configuration list for PBXNativeTarget "Pods-XDVerticalGradientColorSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31C0C7018B759982E34B6D9D7BD10446 /* Debug */,
-				EAB4D7BBFACAD6B64186AF01F3987D4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -564,6 +751,24 @@
 			buildConfigurations = (
 				5A6ACE61C4D128598EA7472C87982601 /* Debug */,
 				6CA42F62CE0652819ED46936FE31E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A3CE1BFF94696DEAE7C8411B31DDF8 /* Build configuration list for PBXNativeTarget "XDVerticalGradientColorSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D099F6CA12E0F04C9CCE4D89EA7A489 /* Debug */,
+				BF7631F71963BF1559F3F582F47C6C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9996633DF93F91555BEA91633E271913 /* Build configuration list for PBXNativeTarget "Pods-XDVerticalGradientColorSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E220E81D55608C31F446582ABBE9A0BE /* Debug */,
+				8BFF154B03318A6672BF2B5994F8A0BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

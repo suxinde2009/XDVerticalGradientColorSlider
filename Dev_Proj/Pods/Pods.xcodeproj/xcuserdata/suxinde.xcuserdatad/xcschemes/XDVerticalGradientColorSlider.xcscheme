@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '576574E3E5F1812E72686839DC920DC8'
-               BlueprintName = 'Pods-XDVerticalGradientColorSlider'
+               BlueprintIdentifier = '3E73CEF9AE4CB08CF1796ACEEEB9DA08'
+               BlueprintName = 'XDVerticalGradientColorSlider'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-XDVerticalGradientColorSlider.a'>
+               BuildableName = 'libXDVerticalGradientColorSlider.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

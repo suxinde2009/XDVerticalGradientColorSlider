@@ -60,6 +60,8 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
     
     self.gradientLayer = [CAGradientLayer layer];
     self.gradientLayer.frame = self.bounds;
+    self.gradientLayer.cornerRadius = kXDVerticalGradientColorBarCornerRadius;
+    self.gradientLayer.masksToBounds = YES;
     
     //self.gradientLayer.colors = self.colors;
     
@@ -88,7 +90,8 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
     self.gradientLayer.startPoint = CGPointMake(0, 0);
     self.gradientLayer.endPoint = CGPointMake(0, 1);
     
-    [self.layer addSublayer:self.gradientLayer];
+    //[self.layer addSublayer:self.gradientLayer];
+    [self.layer insertSublayer:self.gradientLayer atIndex:0];
 }
 
 
@@ -97,7 +100,6 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.gradientLayer.frame = self.bounds;
-    [self setNeedsDisplay];
 }
 
 /**
@@ -107,7 +109,7 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
  @return 校正后的坐标点
  */
 - (CGPoint)convertPointInGradientColorBarCoordinateSystem:(CGPoint)point {
-    float x = self.center.x;
+    float x = self.bounds.size.width/2.0f;
     float y = point.y;
     if (y < 0) {
         y = 0;
@@ -162,7 +164,7 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
 - (void)commonInit {
     self.backgroundColor = [UIColor clearColor];
     _bubbleImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    _bubbleImageView.image = [UIImage imageNamed:@"ic_color_bubble"];
+    _bubbleImageView.image = [UIImage imageNamed:@"XDVerticalGradientColorSlider.bundle/ic_gradient__color_slider_bubble"];
     
     _colorDisplayView = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_colorDisplayView];
@@ -278,50 +280,16 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
 #pragma mark - 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    CGPoint point = [((UITouch *)[touches anyObject]) locationInView:self];
-    CGPoint pointInGradientColorBar = [self convertPoint:point toView:self.colorBar];
-    _selectedColor = [self.colorBar colorOfPointInGradientColorBar:pointInGradientColorBar];
-    
-    float thumbViewCenterY = [self convertPointYToValidInGradientColorSlider:point.y];
-    self.thumbView.center = CGPointMake(self.thumbView.center.x, thumbViewCenterY);
+    [self handleTouches:touches];
     self.thumbView.alpha = 1.0f;
-    [self.thumbView setThumbColor:_selectedColor];
-    
-    if (self.valueChangedHandler) {
-        __weak typeof(self) weakSelf = self;
-        self.valueChangedHandler(weakSelf.selectedColor);
-    }
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    CGPoint point = [((UITouch *)[touches anyObject]) locationInView:self];
-    CGPoint pointInGradientColorBar = [self convertPoint:point toView:self.colorBar];
-    _selectedColor = [self.colorBar colorOfPointInGradientColorBar:pointInGradientColorBar];
-    
-    float thumbViewCenterY = [self convertPointYToValidInGradientColorSlider:point.y];
-    self.thumbView.center = CGPointMake(self.thumbView.center.x, thumbViewCenterY);
-    [self.thumbView setThumbColor:_selectedColor];
-    
-    if (self.valueChangedHandler) {
-        __weak typeof(self) weakSelf = self;
-        self.valueChangedHandler(weakSelf.selectedColor);
-    }
+    [self handleTouches:touches];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    CGPoint point = [((UITouch *)[touches anyObject]) locationInView:self];
-    CGPoint pointInGradientColorBar = [self convertPoint:point toView:self.colorBar];
-    
-    _selectedColor = [self.colorBar colorOfPointInGradientColorBar:pointInGradientColorBar];
-    float thumbViewCenterY = [self convertPointYToValidInGradientColorSlider:point.y];
-    self.thumbView.center = CGPointMake(self.thumbView.center.x, thumbViewCenterY);
-    [self.thumbView setThumbColor:_selectedColor];
-    
-    if (self.valueChangedHandler) {
-        __weak typeof(self) weakSelf = self;
-        self.valueChangedHandler(weakSelf.selectedColor);
-    }
-    
+    [self handleTouches:touches];
     [UIView animateWithDuration:0.5 animations:^{
         self.thumbView.alpha = 0.0f;
     }];
@@ -329,14 +297,31 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
 
 - (float)convertPointYToValidInGradientColorSlider:(float)pointY {
     float y = pointY;
-    if (y < 0) {
-        y = 0;
-    } else if (y > self.bounds.size.height) {
-        y = self.bounds.size.height;
+    if (y < kXDVerticalGradientColorSliderBorderPadding) {
+        y = kXDVerticalGradientColorSliderBorderPadding;
+    } else if (y > (self.bounds.size.height-(2*kXDVerticalGradientColorSliderBorderPadding))) {
+        y = self.bounds.size.height-(2*kXDVerticalGradientColorSliderBorderPadding);
     }else {
         y = pointY;
     }
     return y;
+}
+
+- (void)handleTouches:(NSSet *)touches {
+    CGPoint point = [((UITouch *)[touches anyObject]) locationInView:self];
+    float calibratedPointY = [self convertPointYToValidInGradientColorSlider:point.y];
+    CGPoint calibratedPoint = CGPointMake(self.center.x, calibratedPointY);
+    CGPoint pointInGradientColorBar = [self convertPoint:calibratedPoint toView:self.colorBar];
+    
+    _selectedColor = [self.colorBar colorOfPointInGradientColorBar:pointInGradientColorBar];
+    self.thumbView.center = CGPointMake(self.thumbView.center.x, calibratedPointY);
+    [self.thumbView setThumbColor:_selectedColor];
+    
+    if (self.valueChangedHandler) {
+        __weak typeof(self) weakSelf = self;
+        self.valueChangedHandler(weakSelf.selectedColor);
+    }
+
 }
 
 
