@@ -9,12 +9,13 @@
 #import "XDVerticalGradientColorSlider.h"
 #import <Masonry/Masonry.h>
 
-static NSInteger kXDVerticalGradientColorSliderBorderPadding = 2.0f;
-static NSInteger kXDVerticalGradientColorSliderWidth = 12.0f;
-static NSInteger kXDVerticalGradientColorThumbViewCicleSize = 48.0f;
-static NSInteger kXDVerticalGradientColorThumbViewBubbleWidth = 58.0f;
-static NSInteger kXDVerticalGradientColorSliderCornerRadius = 6.0f;
-static NSInteger kXDVerticalGradientColorBarCornerRadius = 4.0f;
+static float kXDVerticalGradientColorSliderBorderPadding = 2.0f;
+static float kXDVerticalGradientColorSliderWidth = 12.0f;
+static float kXDVerticalGradientColorThumbViewCicleSize = 48.0f;
+static float kXDVerticalGradientColorThumbViewBubbleWidth = 58.0f;
+static float kXDVerticalGradientColorSliderCornerRadius = 6.0f;
+static float kXDVerticalGradientColorBarCornerRadius = 4.0f;
+static float kXDVerticalGradientColorThumbBubblePadding = 8.0f;
 
 @interface XDVerticalGradientColorBar : UIView
 
@@ -247,7 +248,9 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
     [self.colorBarContainerView addSubview:self.colorBar];
     self.colorBarContainerView.layer.cornerRadius = kXDVerticalGradientColorSliderCornerRadius;
     self.colorBarContainerView.clipsToBounds = YES;
-    self.thumbView = [[XDVerticalGradientColorSliderThumbView alloc] initWithFrame:CGRectMake(-56,
+    float thumbViewXOffset = (kXDVerticalGradientColorThumbViewBubbleWidth)-((self.bounds.size.width/2.0f)-(kXDVerticalGradientColorSliderWidth/2.0f)+kXDVerticalGradientColorThumbBubblePadding);
+    
+    self.thumbView = [[XDVerticalGradientColorSliderThumbView alloc] initWithFrame:CGRectMake(-thumbViewXOffset,
                                                                                               0,
                                                                                               kXDVerticalGradientColorThumbViewBubbleWidth,
                                                                                               kXDVerticalGradientColorThumbViewCicleSize)];
