@@ -298,6 +298,10 @@ UIColor *XDVerticalGradientColorSliderGetFromIntegers(float r, float g, float b)
     }];
 }
 
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.thumbView.alpha = 0.0f;
+}
+
 - (float)convertPointYToValidInGradientColorSlider:(float)pointY {
     float y = pointY;
     if (y < kXDVerticalGradientColorSliderBorderPadding) {
